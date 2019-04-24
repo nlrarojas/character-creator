@@ -88,7 +88,7 @@ export default class CharacterBuilder extends AbstractFactory implements IBuilde
                 this.spaces, this.appearanceLevel, this.cost, this.weapon);
                 break;
             default:
-        }        
+        }
         return character;
     }
 }
