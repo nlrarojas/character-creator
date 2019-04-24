@@ -5,8 +5,9 @@
   "dependencies": {
     "@types/jest": "24.0.11",
     "@types/node": "11.13.6",
-    "@types/react": "16.8.14",
     "@types/react-dom": "16.8.4",
+    "hashmap": "^2.3.0",
+    "node-sass": "^4.11.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8",
@@ -26,5 +27,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@types/react": "^16.8.14"
+  }
 }

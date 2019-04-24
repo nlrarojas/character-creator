@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import WeaponGenerator from './model/WeaponGenerator';
+import WeaponPrototype from './model/WeaponPrototype';
 
 class App extends Component {
   render() {
+    const weaponGenerator = new WeaponGenerator();    
+    weaponGenerator.getWeapons().map(weapon => {
+      WeaponPrototype.addPrototype(weapon.name, weapon);
+    });
+    console.log(WeaponPrototype.getPrototype('Scop-ETA'));
     return (
       <div className="App">
         <header className="App-header">
