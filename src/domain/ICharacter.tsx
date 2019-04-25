@@ -14,4 +14,27 @@ export default interface ICharacter extends IPrototype<ICharacter> {
 
   clone(): ICharacter;
   deepClone(): ICharacter;
+
+  /*
+  setName(name: string): void;
+  getName(): string;
+
+  setAppearance(appearance: string []): void;
+  getAppearance(): string[];
+
+  setLife(life: number): void;
+  getLife(): number;
+
+  setPunchesPerTime(punchesPerTime: number): void;
+  getPunchesPerTime(): number;
+
+  setAppearanceLevel(appearanceLevel: number): void;
+  getAppearanceLevel(): number;
+
+  setCost(cost: number): void;
+  getCost(): number;
+
+  setWeapon(weapon: Weapon): void;
+  getWeapon(): Weapon;
+  */
 }

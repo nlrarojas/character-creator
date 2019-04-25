@@ -27,23 +27,20 @@ export default class CharacterTable extends Component<IProps, IState> {
             </tr>
           </thead>
           <tbody>
-            {characterList.map(weapon => {
-              console.log(weapon)
+            {characterList.map((character, i) => {              
               return (
-                weapon.name
-              );
-                <tr>
-                  <th scope="row">{weapon.name}</th>
-                  <td>{weapon.name}</td>
-                  <td>{weapon.appearance}</td>
-                  <td>{weapon.life}</td>
-                  <td>{weapon.punchesPerTime}</td>
-                  <td>{weapon.level}</td>
-                  <td>{weapon.spaces}</td>
-                  <td>{weapon.appearanceLevel}</td>
-                  <td>{weapon.cost}</td>
-                  <td>{weapon.weapon}</td>
+                <tr id={character.name + i}>
+                  <th scope="row">{character.name}</th>                  
+                  <td>{character.appearance}</td>
+                  <td>{character.life}</td>
+                  <td>{character.punchesPerTime}</td>
+                  <td>{character.level}</td>
+                  <td>{character.spaces}</td>
+                  <td>{character.appearanceLevel}</td>
+                  <td>{character.cost}</td>
+                  <td>{character.weapon.name}</td>
                 </tr>
+              );                
             })}
           </tbody>
         </table>

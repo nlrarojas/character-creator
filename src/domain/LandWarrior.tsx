@@ -51,4 +51,61 @@ export default class LandWarrior implements ICharacter {
     deepClone(): ICharacter {
         return this.clone();
     };
+
+    /*
+    setName(name: string) {
+        this.name = name;
+    }
+
+    getName(){
+        return this.name;
+    }
+    
+    setAppearance(appearance: string []) {
+        this.appearance = appearance;
+    }
+
+    getAppearance() {
+        return this.appearance;
+    }
+
+    setLife(life: number) {
+        this.life = life;
+    }
+
+    getLife() {
+        return this.life;
+    }
+
+    setPunchesPerTime(punchesPerTime: number) {
+        this.punchesPerTime = punchesPerTime;
+    }
+
+    getPunchesPerTime() {
+        return this.punchesPerTime;
+    }
+
+    setAppearanceLevel(appearanceLevel: number) {
+        this.appearanceLevel = appearanceLevel;
+    }
+
+    getAppearanceLevel() {
+        return this.appearanceLevel;
+    }
+
+    setCost(cost: number) {
+        this.cost = cost;
+    }
+
+    getCost() {
+        return this.cost;
+    }
+
+    setWeapon(weapon: Weapon) {
+        this.weapon = weapon;
+    }
+
+    getWeapon() {
+        return this.weapon;
+    }*/
 }
